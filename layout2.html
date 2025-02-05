@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout-2</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        display: grid;
+        gap: 3px;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+          "header header header"
+          "box2 box3 box4"
+          "box5 box3 box6"
+          "box5 box7 box7"
+          "box8 box8 box9";
+        width: 50%;
+      }
+      .container > div {
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .child1 {
+        grid-area: header;
+        background: lightpink;
+      }
+      .child2 {
+        grid-area: box2;
+        background: red;
+      }
+      .child3 {
+        grid-area: box3;
+        background: lightgoldenrodyellow;
+      }
+      .child4 {
+        grid-area: box4;
+        background: red;
+      }
+      .child5 {
+        grid-area: box5;
+        background: darkorchid;
+      }
+      .child6 {
+        grid-area: box6;
+        background: lightblue;
+      }
+      .child7 {
+        grid-area: box7;
+        background: orange;
+      }
+      .child8 {
+        grid-area: box8;
+        background: darkblue;
+      }
+      .child9 {
+        grid-area: box9;
+        background: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child4">4</div>
+      <div class="child5">5</div>
+      <div class="child6">6</div>
+      <div class="child7">7</div>
+      <div class="child8">8</div>
+      <div class="child9">9</div>
+    </div>
+  </body>
+</html>
